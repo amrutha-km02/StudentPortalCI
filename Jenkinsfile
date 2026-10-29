@@ -9,7 +9,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/amrutha-km02/practice.git'
+                    url: 'https://github.com/amrutha-km02/StudentPortalCI.git'
             }
         }
 
