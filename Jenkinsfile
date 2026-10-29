@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "amruthakm02/studenportal:v2"
+        DOCKER_IMAGE = "amruthakm02/studentportal"
     }
 
     stages {
         stage('Clone Repository') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/amrutha-km02/StudentPortalCI.git'
+                    url: 'https://github.com/amrutha-km02/practice.git'
             }
         }
 
